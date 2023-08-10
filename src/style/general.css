@@ -3,10 +3,38 @@
   font-family: Tiempos-Bold;
   src: url("../style/fonts/TestTiemposText-Bold.otf");
 }
+@font-face {
+  font-family: Tiempos-BoldItalic;
+  src: url("../style/fonts/TestTiemposText-BoldItalic.otf");
+}
+@font-face {
+  font-family: Tiempos-Medium;
+  src: url("../style/fonts/TestTiemposText-Medium.otf");
+}
+@font-face {
+  font-family: Tiempos-MediumItalic;
+  src: url("../style/fonts/TestTiemposText-MediumItalic.otf");
+}
+@font-face {
+  font-family: Tiempos-Regular;
+  src: url("../style/fonts/TestTiemposText-Regular.otf");
+}
+@font-face {
+  font-family: Tiempos-RegularItalic;
+  src: url("../style/fonts/TestTiemposText-RegularItalic.otf");
+}
+@font-face {
+  font-family: Tiempos-SemiBold;
+  src: url("../style/fonts/TestTiemposText-SemiBold.otf");
+}
+@font-face {
+  font-family: Tiempos-SemiBold;
+  src: url("../style/fonts/TestTiemposText-SemiBoldItalic.otf");
+}
 body {
   border: 1px solid red;
   color: #4b2aad;
   font-size: 2rem;
   font-weight: bolder;
-  font-family: Tiempos-Bold;
+  font-family: Tiempos-Medium;
 }/*# sourceMappingURL=general.css.map */
