@@ -1,5 +1,7 @@
 // Google Font
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;700&display=swap');
+// Tiempos Text Font - https://klim.co.nz/retail-fonts/tiempos-text/
+@import './fonts';
 
 @import './variables';
 
@@ -8,4 +10,5 @@ body {
     color: $very-dark-purple;
     font-size: 2rem;
     font-weight: bolder;
+    font-family: Tiempos-Bold;
 }
