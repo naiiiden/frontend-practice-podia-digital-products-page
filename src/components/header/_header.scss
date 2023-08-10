@@ -1,0 +1,26 @@
+header {
+    padding: 2rem;
+
+    .header-logo-link, svg {
+        width: fit-content;
+        display: block;
+
+        svg {
+            width: 76px;
+            height: 27px;
+            fill: $very-dark-purple;
+            transition: .15s ease-in-out;
+        }
+
+        &:hover, &:focus-visible {
+            svg {
+                fill: $darkest-purple;
+                transition: .15s ease-in-out;   
+            }
+        }
+
+        &:focus-visible {
+            outline-offset: 5px;
+        }
+    }
+}

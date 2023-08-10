@@ -33,8 +33,26 @@
 }
 body {
   border: 1px solid red;
-  color: #4b2aad;
-  font-size: 2rem;
-  font-weight: bolder;
-  font-family: Tiempos-Medium;
+}
+
+header {
+  padding: 2rem;
+}
+header .header-logo-link, header svg {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+}
+header .header-logo-link svg, header svg svg {
+  width: 76px;
+  height: 27px;
+  fill: #4b2aad;
+  transition: 0.15s ease-in-out;
+}
+header .header-logo-link:hover svg, header .header-logo-link:focus-visible svg, header svg:hover svg, header svg:focus-visible svg {
+  fill: #201445;
+  transition: 0.15s ease-in-out;
+}
+header .header-logo-link:focus-visible, header svg:focus-visible {
+  outline-offset: 5px;
 }/*# sourceMappingURL=general.css.map */
