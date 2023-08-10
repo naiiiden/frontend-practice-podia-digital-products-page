@@ -1,6 +1,14 @@
 header {
     padding: 2rem;
 
+    .mobile-navigation {
+        display: unset;
+    }
+
+    .desktop-navigation {
+        display: none;
+    }
+
     .header-logo-link, svg {
         width: fit-content;
         display: block;
@@ -21,6 +29,16 @@ header {
 
         &:focus-visible {
             outline-offset: 5px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .mobile-navigation {
+            display: none;
+        }
+
+        .desktop-navigation {
+            display: unset;
         }
     }
 }

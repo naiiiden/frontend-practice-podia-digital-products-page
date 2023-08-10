@@ -38,6 +38,12 @@ body {
 header {
   padding: 2rem;
 }
+header .mobile-navigation {
+  display: unset;
+}
+header .desktop-navigation {
+  display: none;
+}
 header .header-logo-link, header svg {
   width: -moz-fit-content;
   width: fit-content;
@@ -55,4 +61,12 @@ header .header-logo-link:hover svg, header .header-logo-link:focus-visible svg, 
 }
 header .header-logo-link:focus-visible, header svg:focus-visible {
   outline-offset: 5px;
+}
+@media screen and (min-width: 1024px) {
+  header .mobile-navigation {
+    display: none;
+  }
+  header .desktop-navigation {
+    display: unset;
+  }
 }/*# sourceMappingURL=general.css.map */
