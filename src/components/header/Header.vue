@@ -16,6 +16,30 @@
             <ul>
                 <li>
                     <button>Features</button>
+                    <div>
+                        <div>
+                            <h3>Platform</h3>
+                            <ul>
+                                <li><a href="">Website builder</a></li>
+                                <li><a href="">Digital products</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Email marketing</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Features</h3>
+                            <ul>
+                                <li><a href="">Online courses</a></li>
+                                <li><a href="">Digital downloads</a></li>
+                                <li><a href="">Webinars & workshops</a></li>
+                                <li><a href="">Coaching & consultations</a></li>
+                                <li><a href="">Affiliate marketing</a></li>
+                                <li><a href="">Embeds</a></li>
+                                <li><a href="">Integrations</a></li>
+                            </ul>
+                        </div>
+                        <a>Features overview</a>
+                    </div>
                 </li>
                 <li>
                     <a href="">Examples</a>
@@ -28,6 +52,25 @@
                 </li>
                 <li>
                     <button>Resources</button>
+                    <div>
+                        <div>
+                            <h3>Free resources</h3>
+                            <ul>
+                                <li><a href="">Resource center</a></li>
+                                <li><a href="">Hire a Podia pro</a></li>
+                                <li><a href="">Creator advice</a></li>
+                                <li><a href="">Win $2000</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="">Creator stories</a></li>
+                                <li><a href="">Free tools</a></li>
+                                <li><a href="">Podia creator community</a></li>
+                                <li><a href="">Help center</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a href="">Sign up free</a>
@@ -38,6 +81,30 @@
             <ul>
                 <li>
                     <button>Features</button>
+                    <div>
+                        <div>
+                            <h3>Platform</h3>
+                            <ul>
+                                <li><a href="">Website builder</a></li>
+                                <li><a href="">Digital products</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Email marketing</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Features</h3>
+                            <ul>
+                                <li><a href="">Online courses</a></li>
+                                <li><a href="">Digital downloads</a></li>
+                                <li><a href="">Webinars & workshops</a></li>
+                                <li><a href="">Coaching & consultations</a></li>
+                                <li><a href="">Affiliate marketing</a></li>
+                                <li><a href="">Embeds</a></li>
+                                <li><a href="">Integrations</a></li>
+                            </ul>
+                        </div>
+                        <a>Features overview</a>
+                    </div>
                 </li>
                 <li>
                     <a href="">Examples</a>
@@ -50,6 +117,25 @@
                 </li>
                 <li>
                     <button>Resources</button>
+                    <div>
+                        <div>
+                            <h3>Free resources</h3>
+                            <ul>
+                                <li><a href="">Resource center</a></li>
+                                <li><a href="">Hire a Podia pro</a></li>
+                                <li><a href="">Creator advice</a></li>
+                                <li><a href="">Win $2000</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="">Creator stories</a></li>
+                                <li><a href="">Free tools</a></li>
+                                <li><a href="">Podia creator community</a></li>
+                                <li><a href="">Help center</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <a href="">Login</a>
