@@ -1,6 +1,10 @@
 <script setup>
 import HeaderFeaturesDropdown from './HeaderFeaturesDropdown.vue';
 import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
+
+import { ref } from 'vue';
+
+const toggleMenu = ref(false);
 </script>
 
 <template>
@@ -13,8 +17,8 @@ import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
         </a>
         <nav class="mobile-navigation">
             <a href="">Login</a>
-            <button>Menu</button>
-            <ul>
+            <button @click="toggleMenu = !toggleMenu">Menu</button>
+            <ul v-if="toggleMenu">
                 <li>
                     <button>Features</button>
                     <HeaderFeaturesDropdown/>
@@ -66,3 +70,7 @@ import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
         </nav>
     </header>
 </template>
+
+<style lang="scss" scoped>
+
+</style>
