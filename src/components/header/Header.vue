@@ -18,28 +18,30 @@ const toggleMenu = ref(false);
         <nav class="mobile-navigation">
             <a href="">Login</a>
             <button @click="toggleMenu = !toggleMenu">Menu</button>
-            <ul v-if="toggleMenu">
-                <li>
-                    <button>Features</button>
-                    <HeaderFeaturesDropdown/>
-                </li>
-                <li>
-                    <a href="">Examples</a>
-                </li>
-                <li>
-                    <a href="">Pricing</a>
-                </li>
-                <li>
-                    <a href="">Demo</a>
-                </li>
-                <li>
-                    <button>Resources</button>
-                    <HeaderResourcesDropdown/>
-                </li>
-                <li>
-                    <a href="">Sign up free</a>
-                </li>
-            </ul>
+            <Transition>
+                <ul v-if="toggleMenu">
+                    <li>
+                        <button>Features</button>
+                        <HeaderFeaturesDropdown/>
+                    </li>
+                    <li>
+                        <a href="">Examples</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">Demo</a>
+                    </li>
+                    <li>
+                        <button>Resources</button>
+                        <HeaderResourcesDropdown/>
+                    </li>
+                    <li>
+                        <a href="">Sign up free</a>
+                    </li>
+                </ul>
+            </Transition>
         </nav>
         <nav class="desktop-navigation">
             <ul>
@@ -72,5 +74,11 @@ const toggleMenu = ref(false);
 </template>
 
 <style lang="scss" scoped>
+.v-enter-active, .v-leave-active {
+  transition: opacity 0.2s;
+}
 
+.v-enter-from, .v-leave-to {
+  opacity: 0;
+}
 </style>
