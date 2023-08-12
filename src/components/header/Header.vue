@@ -1,5 +1,6 @@
 <script setup>
 import HeaderFeaturesDropdown from './HeaderFeaturesDropdown.vue';
+import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
 </script>
 
 <template>
@@ -29,25 +30,7 @@ import HeaderFeaturesDropdown from './HeaderFeaturesDropdown.vue';
                 </li>
                 <li>
                     <button>Resources</button>
-                    <div>
-                        <div>
-                            <h3>Free resources</h3>
-                            <ul>
-                                <li><a href="">Resource center</a></li>
-                                <li><a href="">Hire a Podia pro</a></li>
-                                <li><a href="">Creator advice</a></li>
-                                <li><a href="">Win $2000</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><a href="">Creator stories</a></li>
-                                <li><a href="">Free tools</a></li>
-                                <li><a href="">Podia creator community</a></li>
-                                <li><a href="">Help center</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <HeaderResourcesDropdown/>
                 </li>
                 <li>
                     <a href="">Sign up free</a>
@@ -71,25 +54,7 @@ import HeaderFeaturesDropdown from './HeaderFeaturesDropdown.vue';
                 </li>
                 <li>
                     <button>Resources</button>
-                    <div>
-                        <div>
-                            <h3>Free resources</h3>
-                            <ul>
-                                <li><a href="">Resource center</a></li>
-                                <li><a href="">Hire a Podia pro</a></li>
-                                <li><a href="">Creator advice</a></li>
-                                <li><a href="">Win $2000</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><a href="">Creator stories</a></li>
-                                <li><a href="">Free tools</a></li>
-                                <li><a href="">Podia creator community</a></li>
-                                <li><a href="">Help center</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <HeaderResourcesDropdown/>
                 </li>
                 <li>
                     <a href="">Login</a>
