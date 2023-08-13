@@ -33,7 +33,12 @@ const toggleMenu = ref(false);
                     </button>
                     <ul>
                         <li>
-                            <button>Features</button>
+                            <button>
+                                Features
+                                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
+                                </svg>
+                            </button>
                             <HeaderFeaturesDropdown/>
                         </li>
                         <li>
@@ -46,7 +51,12 @@ const toggleMenu = ref(false);
                             <a href="">Demo</a>
                         </li>
                         <li>
-                            <button>Resources</button>
+                            <button>
+                                Resources
+                                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
+                                </svg>
+                            </button>
                             <HeaderResourcesDropdown/>
                         </li>
                         <li>
@@ -87,7 +97,6 @@ const toggleMenu = ref(false);
 </template>
 
 <style lang="scss" scoped>
-@import '../../style/fonts.scss';
 
 .v-enter-active, .v-leave-active {
     transition: opacity 0.2s;
@@ -128,7 +137,7 @@ const toggleMenu = ref(false);
     }
 
     li, li button {
-        font-family: Tiempos-Medium;
+        font-family: Tiempos-Medium, sans-serif;
         font-size: 1.25rem;
         border: none;
         background: none;
@@ -139,6 +148,12 @@ const toggleMenu = ref(false);
 
         &:nth-last-child(1) {
             margin-top: 1rem;
+        }
+
+        &:is(button) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
         }
     }
 

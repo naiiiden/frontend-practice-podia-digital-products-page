@@ -77,7 +77,7 @@ header .desktop-navigation {
 header .header-login-button, header button:nth-child(2) {
   padding: 0.25rem 1rem;
 }
-header button:nth-child(2) {
+header button:nth-child(2), header li button {
   border: none;
   background: none;
   display: inline-flex;
