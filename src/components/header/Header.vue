@@ -16,7 +16,7 @@ const toggleMenu = ref(false);
             </svg>
         </a>
         <nav class="mobile-navigation">
-            <a href="">Login</a>
+            <a href="" class="header-login-button">Login</a>
             <button @click="toggleMenu = !toggleMenu">Menu</button>
             <Transition>
                 <ul v-if="toggleMenu">

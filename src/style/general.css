@@ -33,16 +33,14 @@
 }
 body {
   border: 1px solid red;
+  font-family: Inter, sans-serif;
 }
 
 header {
-  padding: 2rem;
-}
-header .mobile-navigation {
-  display: unset;
-}
-header .desktop-navigation {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
 }
 header .header-logo-link, header svg {
   width: -moz-fit-content;
@@ -62,6 +60,12 @@ header .header-logo-link:hover svg, header .header-logo-link:focus-visible svg, 
 header .header-logo-link:focus-visible, header svg:focus-visible {
   outline-offset: 5px;
 }
+header .mobile-navigation {
+  display: unset;
+}
+header .desktop-navigation {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   header .mobile-navigation {
     display: none;
@@ -69,4 +73,8 @@ header .header-logo-link:focus-visible, header svg:focus-visible {
   header .desktop-navigation {
     display: unset;
   }
+}
+header .header-login-button, header button:nth-child(2) {
+  padding: 0.25rem 1rem;
+  display: inline-block;
 }/*# sourceMappingURL=general.css.map */
