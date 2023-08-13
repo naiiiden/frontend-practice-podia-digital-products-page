@@ -24,7 +24,7 @@ const toggleMenu = ref(false);
                 </svg>
             </button>
             <Transition>
-                <ul v-if="toggleMenu">
+                <ul v-if="toggleMenu" class="mobile-ul">
                     <li>
                         <button>Features</button>
                         <HeaderFeaturesDropdown/>
@@ -80,10 +80,21 @@ const toggleMenu = ref(false);
 
 <style lang="scss" scoped>
 .v-enter-active, .v-leave-active {
-  transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.mobile-ul {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #dfd8d3;
+    border-radius: .45rem;
+    margin: .45rem;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .v-enter-from, .v-leave-to {
-  opacity: 0;
+    opacity: 0;
 }
 </style>
