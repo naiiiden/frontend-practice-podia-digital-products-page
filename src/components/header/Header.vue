@@ -25,7 +25,7 @@ const toggleMenu = ref(false);
             </button>
             <Transition>
                 <div v-if="toggleMenu" class="mobile-menu-container">
-                    <button @click="toggleMenu = !toggleMenu">
+                    <button @click="toggleMenu = !toggleMenu" class="close-menu-button">
                         Menu 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 13" class="site-nav__icon site-nav__icon--close" width="12" height="12">
                             <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6.5 6.5L12 1M6.5 6.5L1 12m5.5-5.5L12 12M6.5 6.5L1 1"></path>
@@ -91,6 +91,10 @@ const toggleMenu = ref(false);
     transition: opacity 0.2s;
 }
 
+.v-enter-from, .v-leave-to {
+    opacity: 0;
+}
+
 .mobile-menu-container {
     position: absolute;
     background: #fff;
@@ -100,9 +104,25 @@ const toggleMenu = ref(false);
     top: 0;
     left: 0;
     right: 0;
-}
+    padding: 1.25rem;
 
-.v-enter-from, .v-leave-to {
-    opacity: 0;
+    .close-menu-button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        background: none;
+        font-size: .75rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #9c8881;
+
+        &:active {
+            svg {
+                color: #4b2aad;
+            }
+        }
+    }
 }
 </style>
