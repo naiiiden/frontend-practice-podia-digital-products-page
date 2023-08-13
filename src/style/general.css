@@ -76,5 +76,11 @@ header .desktop-navigation {
 }
 header .header-login-button, header button:nth-child(2) {
   padding: 0.25rem 1rem;
-  display: inline-block;
+}
+header button:nth-child(2) {
+  border: none;
+  background: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }/*# sourceMappingURL=general.css.map */

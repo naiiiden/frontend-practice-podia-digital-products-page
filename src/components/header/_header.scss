@@ -49,6 +49,13 @@ header {
 
     .header-login-button, button:nth-child(2) {
         padding: .25rem 1rem;
-        display: inline-block
+    }
+
+    button:nth-child(2) {
+        border: none;
+        background: none;
+        display: inline-flex;
+        align-items: center;
+        gap: .25rem;
     }
 }
