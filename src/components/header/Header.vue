@@ -24,28 +24,36 @@ const toggleMenu = ref(false);
                 </svg>
             </button>
             <Transition>
-                <ul v-if="toggleMenu" class="mobile-ul">
-                    <li>
-                        <button>Features</button>
-                        <HeaderFeaturesDropdown/>
-                    </li>
-                    <li>
-                        <a href="">Examples</a>
-                    </li>
-                    <li>
-                        <a href="">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="">Demo</a>
-                    </li>
-                    <li>
-                        <button>Resources</button>
-                        <HeaderResourcesDropdown/>
-                    </li>
-                    <li>
-                        <a href="">Sign up free</a>
-                    </li>
-                </ul>
+                <div v-if="toggleMenu" class="mobile-menu-container">
+                    <button @click="toggleMenu = !toggleMenu">
+                        Menu 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 13 13" class="site-nav__icon site-nav__icon--close" width="12" height="12">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6.5 6.5L12 1M6.5 6.5L1 12m5.5-5.5L12 12M6.5 6.5L1 1"></path>
+                        </svg>
+                    </button>
+                    <ul>
+                        <li>
+                            <button>Features</button>
+                            <HeaderFeaturesDropdown/>
+                        </li>
+                        <li>
+                            <a href="">Examples</a>
+                        </li>
+                        <li>
+                            <a href="">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="">Demo</a>
+                        </li>
+                        <li>
+                            <button>Resources</button>
+                            <HeaderResourcesDropdown/>
+                        </li>
+                        <li>
+                            <a href="">Sign up free</a>
+                        </li>
+                    </ul>
+                </div>
             </Transition>
         </nav>
         <nav class="desktop-navigation">
@@ -83,7 +91,7 @@ const toggleMenu = ref(false);
     transition: opacity 0.2s;
 }
 
-.mobile-ul {
+.mobile-menu-container {
     position: absolute;
     background: #fff;
     border: 1px solid #dfd8d3;
