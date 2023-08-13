@@ -87,6 +87,8 @@ const toggleMenu = ref(false);
 </template>
 
 <style lang="scss" scoped>
+@import '../../style/fonts.scss';
+
 .v-enter-active, .v-leave-active {
     transition: opacity 0.2s;
 }
@@ -123,6 +125,31 @@ const toggleMenu = ref(false);
                 color: #4b2aad;
             }
         }
+    }
+
+    li, li button {
+        font-family: Tiempos-Medium;
+        font-size: 1.25rem;
+        border: none;
+        background: none;
+
+        &:nth-child(1):not(button) {
+            margin-top: 2rem;
+        }
+
+        &:nth-last-child(1) {
+            margin-top: 1rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    div {
+        display: none;
     }
 }
 </style>
