@@ -113,6 +113,14 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
     opacity: 0;
 }
 
+svg, .rotate {
+    transition: .2s;
+
+    &.rotate {
+        transform: rotate(180deg);
+    }
+}
+
 .mobile-menu-container {
     position: absolute;
     background: #fff;
