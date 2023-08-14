@@ -151,7 +151,7 @@ const toggleDropdown = (dropdown) => {
             margin-top: 2rem;
         }
 
-        &:nth-last-child(1) {
+        &:nth-last-child(1):not(button) {
             margin-top: 1rem;
         }
 
