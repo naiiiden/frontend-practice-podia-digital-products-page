@@ -8,8 +8,10 @@ const toggleMenu = ref(false);
 const openDropdown = ref(null);
 
 const toggleDropdown = (dropdown) => {
-  openDropdown.value = openDropdown.value === dropdown ? null : dropdown;
+    openDropdown.value = openDropdown.value === dropdown ? null : dropdown;
 };
+
+const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
 </script>
 
 <template>
@@ -24,7 +26,7 @@ const toggleDropdown = (dropdown) => {
             <a href="" class="header-login-button">Login</a>
             <button @click="toggleMenu = !toggleMenu">
                 Menu
-                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
+                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ asd: isDropdownOpen('features') }">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                 </svg>
             </button>
@@ -40,7 +42,7 @@ const toggleDropdown = (dropdown) => {
                         <li>
                             <button @click="toggleDropdown('features')">
                                 Features
-                                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
+                                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                                 </svg>
                             </button>
@@ -58,7 +60,7 @@ const toggleDropdown = (dropdown) => {
                         <li>
                             <button @click="toggleDropdown('resources')">
                                 Resources
-                                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
+                                <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                                 </svg>
                             </button>
