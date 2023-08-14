@@ -5,6 +5,11 @@ import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
 import { ref } from 'vue';
 
 const toggleMenu = ref(false);
+const openDropdown = ref(null);
+
+const toggleDropdown = (dropdown) => {
+  openDropdown.value = openDropdown.value === dropdown ? null : dropdown;
+};
 </script>
 
 <template>
@@ -33,13 +38,13 @@ const toggleMenu = ref(false);
                     </button>
                     <ul>
                         <li>
-                            <button>
+                            <button @click="toggleDropdown('features')">
                                 Features
                                 <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                                 </svg>
                             </button>
-                            <HeaderFeaturesDropdown/>
+                            <HeaderFeaturesDropdown v-if="openDropdown === 'features'"/>
                         </li>
                         <li>
                             <a href="">Examples</a>
@@ -51,13 +56,13 @@ const toggleMenu = ref(false);
                             <a href="">Demo</a>
                         </li>
                         <li>
-                            <button>
+                            <button @click="toggleDropdown('resources')">
                                 Resources
                                 <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                                 </svg>
                             </button>
-                            <HeaderResourcesDropdown/>
+                            <HeaderResourcesDropdown v-if="openDropdown === 'resources'"/>
                         </li>
                         <li>
                             <a href="">Sign up free</a>
@@ -161,10 +166,6 @@ const toggleMenu = ref(false);
         display: flex;
         flex-direction: column;
         gap: 1rem;
-    }
-
-    div {
-        display: none;
     }
 }
 </style>
