@@ -152,7 +152,7 @@ svg, .rotate {
     }
 
     li, li button {
-        font-family: Tiempos-Medium, sans-serif;
+        font-family: Tiempos-Regular, sans-serif;
         font-size: 1.25rem;
         border: none;
         background: none;
@@ -163,6 +163,18 @@ svg, .rotate {
 
         &:nth-last-child(1):not(button) {
             margin-top: 1rem;
+
+            a {
+                display: block;
+                background: #4b2aad;
+                color: #fff;
+                text-align: center;
+                width: 100%;
+                border-radius: 2.5rem;
+                font-family: Inter, sans-serif;
+                font-weight: 600;
+                padding: .3rem 1.45rem;
+            }
         }
 
         &:is(button) {
