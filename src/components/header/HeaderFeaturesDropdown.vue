@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="dropdown-menu dropdown-menu-features">
         <div>
             <h3>Platform</h3>
             <ul>

@@ -58,4 +58,32 @@ header {
         align-items: center;
         gap: .25rem;
     }
+
+    .dropdown-menu {
+        padding: 1rem 0;
+
+        h3 {
+            font-family: Inter, sans-serif;
+            font-size: .75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #9c8881;
+            letter-spacing: .1rem;
+            margin-bottom: .5rem;
+        }
+
+        a {
+            font-family: Inter, sans-serif;
+            font-size: .875rem;
+            color: #5c5856;
+        }
+
+        &.dropdown-menu-features {
+            ul {
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                border-bottom: 0.0555555556rem solid #dfd8d3;
+            }
+        }
+    }
 }

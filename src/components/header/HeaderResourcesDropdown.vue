@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <div>
+    <div class="dropdown-menu dropdown-menu-resources">
         <div>
-            <h3>Free resources</h3>
+            <h3 class="test">Free resources</h3>
             <ul>
                 <li><a href="">Resource center</a></li>
                 <li><a href="">Hire a Podia pro</a></li>
