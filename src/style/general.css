@@ -100,6 +100,11 @@ header .dropdown-menu a {
   font-family: Inter, sans-serif;
   font-size: 0.875rem;
   color: #5c5856;
+  transition: 0.2s;
+}
+header .dropdown-menu a:hover, header .dropdown-menu a:active, header .dropdown-menu a:focus-visible {
+  color: #4b2aad;
+  transition: 0.2s;
 }
 header .dropdown-menu.dropdown-menu-features ul {
   padding-bottom: 1rem;
