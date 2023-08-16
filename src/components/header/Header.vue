@@ -76,8 +76,13 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
         <nav class="desktop-navigation">
             <ul>
                 <li>
-                    <button>Features</button>
-                    <HeaderFeaturesDropdown/>
+                    <button @click="toggleDropdown('features')">
+                        Features
+                        <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
+                        </svg>
+                    </button>
+                    <HeaderFeaturesDropdown v-if="openDropdown === 'features'"/>
                 </li>
                 <li>
                     <a href="">Examples</a>
@@ -89,8 +94,13 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                     <a href="">Demo</a>
                 </li>
                 <li>
-                    <button>Resources</button>
-                    <HeaderResourcesDropdown/>
+                    <button @click="toggleDropdown('resources')">
+                        Resources
+                        <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
+                        </svg>
+                    </button>
+                    <HeaderResourcesDropdown v-if="openDropdown === 'resources'"/>
                 </li>
                 <li>
                     <a href="">Login</a>
@@ -174,6 +184,11 @@ svg, .rotate {
                 font-family: Inter, sans-serif;
                 font-weight: 600;
                 padding: .3rem 1.45rem;
+
+                &:hover, &:active, &:focus-visible {
+                    background-color: #351e7a;
+                    box-shadow: inset 0 0 0 0.2rem #d7d2e8;
+                }
             }
         }
 
