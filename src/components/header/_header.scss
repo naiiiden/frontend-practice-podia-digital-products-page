@@ -82,7 +82,17 @@ header {
             ul {
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
-                border-bottom: 0.0555555556rem solid #dfd8d3;
+                border-bottom: .1rem solid #dfd8d3;
+
+            }
+            
+            a:nth-child(3) {
+                color: #4b2aad;
+                font-weight: 600;
+
+                span {
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
             }
         }
     }

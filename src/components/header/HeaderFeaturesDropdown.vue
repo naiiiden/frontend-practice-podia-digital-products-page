@@ -25,7 +25,10 @@
                 <li><a href="">Integrations</a></li>
             </ul>
         </div>
-        <a>Features overview</a>
+        <a>
+            Features overview
+            <span>→</span>
+        </a>
     </div>
 </template>
 
