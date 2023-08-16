@@ -102,3 +102,33 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .header {
+        max-width: 1440px;
+        padding: .25rem 5rem;
+        margin: auto;
+    }
+
+    header {
+        nav {
+            flex-grow: 1;
+            margin-left: 2rem;
+
+            ul {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+
+                a, button {
+                    font-size: 1.125rem;
+                    padding: .5rem 0;
+                }
+
+                li:nth-last-child(2) {
+                    margin-left: auto;
+                }
+            }            
+        }
+    }
+}
