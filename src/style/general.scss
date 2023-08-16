@@ -6,8 +6,8 @@
 @import './variables';
 
 body {
-    border: 1px solid red;
     font-family: Inter, sans-serif;
+    background: #fdfbf9;
 }
 
 @import '../components/header/header';
