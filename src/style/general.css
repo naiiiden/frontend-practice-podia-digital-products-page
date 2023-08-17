@@ -143,6 +143,8 @@ header .sign-up-link {
 }
 header .sign-up-link:hover, header .sign-up-link:active, header .sign-up-link:focus-visible {
   background-color: #351e7a;
+}
+header .sign-up-link:active, header .sign-up-link:focus-visible {
   box-shadow: inset 0 0 0 0.2rem #d7d2e8;
 }
 header .dropdown-menu {
@@ -226,7 +228,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
     border-radius: 0.45rem;
     box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.02);
   }
-  header nav ul li::not(.dropdown-menu a):nth-last-child(2) {
+  header nav ul li:not(.dropdown-menu li):nth-last-child(2) {
     margin-left: auto;
   }
   header nav ul .sign-up-link {
