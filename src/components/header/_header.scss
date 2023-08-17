@@ -206,7 +206,7 @@ header {
                 display: flex;
                 align-items: center;
 
-                a, button {
+                a:not(.dropdown-menu a), button {
                     font-size: 1.125rem;
                     padding: .5rem 1rem;
                     border-radius: 2rem;
@@ -224,7 +224,20 @@ header {
                     }
                 }
 
-                li:nth-last-child(2) {
+                li:has(button) {
+                    position: relative;;
+
+                    .dropdown-menu {
+                        position: absolute;
+                        padding: 1.5rem;
+                        background: #fff;
+                        border: 1px solid #dfd8d3;
+                        border-radius: .45rem;
+                        box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, .1), 0 0.2rem 0.2rem rgba(0, 0, 0, .02);
+                    }
+                }
+
+                li::not(.dropdown-menu a):nth-last-child(2) {
                     margin-left: auto;
                 }
 
