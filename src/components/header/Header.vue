@@ -116,95 +116,11 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
 </template>
 
 <style lang="scss" scoped>
-
 .v-enter-active, .v-leave-active {
     transition: opacity 0.2s;
 }
 
 .v-enter-from, .v-leave-to {
     opacity: 0;
-}
-
-svg, .rotate {
-    transition: .2s;
-
-    &.rotate {
-        transform: rotate(180deg);
-    }
-}
-
-.mobile-menu-container {
-    position: absolute;
-    background: #fff;
-    border: 1px solid #dfd8d3;
-    border-radius: .45rem;
-    margin: .45rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1.25rem;
-
-    .close-menu-button {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        background: none;
-        font-size: .75rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #9c8881;
-
-        &:active {
-            svg {
-                color: #4b2aad;
-            }
-        }
-    }
-
-    li, li button {
-        font-family: Tiempos-Regular, sans-serif;
-        font-size: 1.25rem;
-        border: none;
-        background: none;
-
-        &:nth-child(1):not(button) {
-            margin-top: 2rem;
-        }
-
-        &:nth-last-child(1):not(button) {
-            margin-top: 1rem;
-
-            a {
-                display: block;
-                background: #4b2aad;
-                color: #fff;
-                text-align: center;
-                width: 100%;
-                border-radius: 2.5rem;
-                font-family: Inter, sans-serif;
-                font-weight: 600;
-                padding: .3rem 1.45rem;
-
-                &:hover, &:active, &:focus-visible {
-                    background-color: #351e7a;
-                    box-shadow: inset 0 0 0 0.2rem #d7d2e8;
-                }
-            }
-        }
-
-        &:is(button) {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
 }
 </style>

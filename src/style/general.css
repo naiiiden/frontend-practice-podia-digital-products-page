@@ -42,6 +42,12 @@ header {
   align-items: center;
   padding: 1rem 1.25rem;
 }
+header svg, header .rotate {
+  transition: 0.2s;
+}
+header svg.rotate, header .rotate.rotate {
+  transform: rotate(180deg);
+}
 header .header-logo-link, header svg {
   width: -moz-fit-content;
   width: fit-content;
@@ -65,14 +71,6 @@ header .mobile-navigation {
 }
 header .desktop-navigation {
   display: none;
-}
-@media screen and (min-width: 1024px) {
-  header .mobile-navigation {
-    display: none;
-  }
-  header .desktop-navigation {
-    display: unset;
-  }
 }
 header .header-login-button, header button:nth-child(2) {
   padding: 0.25rem 1rem;
@@ -118,12 +116,81 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) {
 header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+header .mobile-menu-container {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #dfd8d3;
+  border-radius: 0.45rem;
+  margin: 0.45rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+}
+header .mobile-menu-container .close-menu-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9c8881;
+}
+header .mobile-menu-container .close-menu-button:active svg {
+  color: #4b2aad;
+}
+header .mobile-menu-container li, header .mobile-menu-container li button {
+  font-family: Tiempos-Regular, sans-serif;
+  font-size: 1.25rem;
+  border: none;
+  background: none;
+}
+header .mobile-menu-container li:nth-child(1):not(button), header .mobile-menu-container li button:nth-child(1):not(button) {
+  margin-top: 2rem;
+}
+header .mobile-menu-container li:nth-last-child(1):not(button), header .mobile-menu-container li button:nth-last-child(1):not(button) {
+  margin-top: 1rem;
+}
+header .mobile-menu-container li:nth-last-child(1):not(button) a, header .mobile-menu-container li button:nth-last-child(1):not(button) a {
+  display: block;
+  background: #4b2aad;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  border-radius: 2.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  padding: 0.3rem 1.45rem;
+}
+header .mobile-menu-container li:nth-last-child(1):not(button) a:hover, header .mobile-menu-container li:nth-last-child(1):not(button) a:active, header .mobile-menu-container li:nth-last-child(1):not(button) a:focus-visible, header .mobile-menu-container li button:nth-last-child(1):not(button) a:hover, header .mobile-menu-container li button:nth-last-child(1):not(button) a:active, header .mobile-menu-container li button:nth-last-child(1):not(button) a:focus-visible {
+  background-color: #351e7a;
+  box-shadow: inset 0 0 0 0.2rem #d7d2e8;
+}
+header .mobile-menu-container li:is(button), header .mobile-menu-container li button:is(button) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .mobile-menu-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 @media screen and (min-width: 1024px) {
   .header {
     max-width: 1440px;
     padding: 0.25rem 5rem;
     margin: auto;
+  }
+  header .mobile-navigation {
+    display: none;
+  }
+  header .desktop-navigation {
+    display: unset;
   }
   header nav {
     flex-grow: 1;
