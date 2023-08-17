@@ -221,14 +221,14 @@ header {
                         transition: .2s;
                     }
 
-                    &:not(.dropdown-menu a):focus-visible {
+                    &:not(.dropdown-menu a):focus-visible, &:not(.dropdown-menu a):active {
                         box-shadow: inset 0 0 0 0.2rem #d7d2e8;
                         outline: none;
                     }
                 }
 
                 li:has(button) {
-                    position: relative;;
+                    position: relative;
 
                     .dropdown-menu {
                         position: absolute;

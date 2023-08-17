@@ -213,7 +213,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
     color: #1a1715;
     transition: 0.2s;
   }
-  header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a):focus-visible, header nav ul button:not(.dropdown-menu a):focus-visible {
+  header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a):focus-visible, header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a):active, header nav ul button:not(.dropdown-menu a):focus-visible, header nav ul button:not(.dropdown-menu a):active {
     box-shadow: inset 0 0 0 0.2rem #d7d2e8;
     outline: none;
   }
