@@ -68,7 +68,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                                 <HeaderResourcesDropdown v-if="openDropdown === 'resources'"/>
                             </li>
                             <li>
-                                <a href="">Sign up free</a>
+                                <a href="" class="sign-up-link">Sign up free</a>
                             </li>
                         </ul>
                     </div>
@@ -107,7 +107,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                         <a href="">Login</a>
                     </li>
                     <li>
-                        <a href="">Sign up free</a>
+                        <a href="" class="sign-up-link">Sign up free</a>
                     </li>
                 </ul>
             </nav>

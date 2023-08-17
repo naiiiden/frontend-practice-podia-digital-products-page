@@ -82,40 +82,6 @@ header button:nth-child(2), header li button {
   align-items: center;
   gap: 0.25rem;
 }
-header .dropdown-menu {
-  padding: 1rem 0;
-}
-header .dropdown-menu h3 {
-  font-family: Inter, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #9c8881;
-  letter-spacing: 0.1rem;
-  margin-bottom: 0.5rem;
-}
-header .dropdown-menu a {
-  font-family: Inter, sans-serif;
-  font-size: 0.875rem;
-  color: #5c5856;
-  transition: 0.2s;
-}
-header .dropdown-menu a:hover, header .dropdown-menu a:active, header .dropdown-menu a:focus-visible {
-  color: #4b2aad;
-  transition: 0.2s;
-}
-header .dropdown-menu.dropdown-menu-features ul {
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 0.1rem solid #dfd8d3;
-}
-header .dropdown-menu.dropdown-menu-features a:nth-child(3) {
-  color: #4b2aad;
-  font-weight: 600;
-}
-header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
 header .mobile-menu-container {
   position: absolute;
   background: #fff;
@@ -154,7 +120,17 @@ header .mobile-menu-container li:nth-child(1):not(button), header .mobile-menu-c
 header .mobile-menu-container li:nth-last-child(1):not(button), header .mobile-menu-container li button:nth-last-child(1):not(button) {
   margin-top: 1rem;
 }
-header .mobile-menu-container li:nth-last-child(1):not(button) a, header .mobile-menu-container li button:nth-last-child(1):not(button) a {
+header .mobile-menu-container li:is(button), header .mobile-menu-container li button:is(button) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .mobile-menu-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+header .sign-up-link {
   display: block;
   background: #4b2aad;
   color: #fff;
@@ -165,19 +141,43 @@ header .mobile-menu-container li:nth-last-child(1):not(button) a, header .mobile
   font-weight: 600;
   padding: 0.3rem 1.45rem;
 }
-header .mobile-menu-container li:nth-last-child(1):not(button) a:hover, header .mobile-menu-container li:nth-last-child(1):not(button) a:active, header .mobile-menu-container li:nth-last-child(1):not(button) a:focus-visible, header .mobile-menu-container li button:nth-last-child(1):not(button) a:hover, header .mobile-menu-container li button:nth-last-child(1):not(button) a:active, header .mobile-menu-container li button:nth-last-child(1):not(button) a:focus-visible {
+header .sign-up-link:hover, header .sign-up-link:active, header .sign-up-link:focus-visible {
   background-color: #351e7a;
   box-shadow: inset 0 0 0 0.2rem #d7d2e8;
 }
-header .mobile-menu-container li:is(button), header .mobile-menu-container li button:is(button) {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+header .dropdown-menu {
+  padding: 1rem 0;
 }
-header .mobile-menu-container ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+header .dropdown-menu h3 {
+  font-family: Inter, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9c8881;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+header .dropdown-menu a {
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  color: #5c5856;
+  transition: 0.2s;
+}
+header .dropdown-menu a:hover, header .dropdown-menu a:active, header .dropdown-menu a:focus-visible {
+  color: #4b2aad;
+  transition: 0.2s;
+}
+header .dropdown-menu.dropdown-menu-features ul {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #dfd8d3;
+}
+header .dropdown-menu.dropdown-menu-features a:nth-child(3) {
+  color: #4b2aad;
+  font-weight: 600;
+}
+header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @media screen and (min-width: 1024px) {
