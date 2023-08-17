@@ -208,4 +208,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   header nav ul li:nth-last-child(2) {
     margin-left: auto;
   }
+  header nav ul .sign-up-link {
+    padding: 0.5rem 1.35rem;
+  }
 }/*# sourceMappingURL=general.css.map */
