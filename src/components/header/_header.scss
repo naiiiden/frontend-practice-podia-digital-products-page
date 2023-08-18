@@ -251,6 +251,10 @@ header {
                             padding-bottom: unset !important;
                         }
 
+                        a {
+                            font-size: .9375rem;
+                        }
+
                         &.dropdown-menu-features {
                             div:first-child {
                                 border-right: solid #dfd8d3 1px;
