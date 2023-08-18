@@ -5,7 +5,7 @@
 
     &.header-scrolled {
         box-shadow: rgba(0, 0, 0, 0.04) 0px 0.05rem 0px, rgba(0, 0, 0, 0.1) 0px 0.1rem 0.2rem;
-        background: #fff;
+        background: $white;
         transition: .2s;
     }
 }
@@ -76,8 +76,8 @@ header {
     //mobile menu
     .mobile-menu-container {
         position: absolute;
-        background: #fff;
-        border: 1px solid #dfd8d3;
+        background: $white;
+        border: 1px solid $grayest-white;
         border-radius: .45rem;
         margin: .45rem;
         top: 0;
@@ -99,7 +99,7 @@ header {
     
             &:active {
                 svg {
-                    color: #4b2aad;
+                    color: $very-dark-purple;
                 }
             }
         }
@@ -134,8 +134,8 @@ header {
 
     .sign-up-link {
         display: block;
-        background: #4b2aad;
-        color: #fff !important;
+        background: $very-dark-purple;
+        color: $white !important;
         text-align: center;
         width: 100%;
         border-radius: 2.5rem;
@@ -144,7 +144,7 @@ header {
         padding: .3rem 1.45rem;
 
         &:hover, &:active, &:focus-visible {
-            background-color: #351e7a;
+            background-color: $very-darker-purple;
         } 
         
         &:active, &:focus-visible {
@@ -175,7 +175,7 @@ header {
             padding: .5rem 0;
 
             &:hover, &:active, &:focus-visible {
-                color: #4b2aad;
+                color: $very-dark-purple;
                 transition: .2s;
             }
         }
@@ -184,11 +184,11 @@ header {
             ul {
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
-                border-bottom: .1rem solid #dfd8d3;
+                border-bottom: .1rem solid $grayest-white;
             }
 
             a:nth-child(3) {
-                color: #4b2aad;
+                color: $very-dark-purple;
                 font-weight: 600;
                 
                 span {
@@ -245,8 +245,8 @@ header {
                     .dropdown-menu {
                         position: absolute;
                         padding: 1.5rem;
-                        background: #fff;
-                        border: 1px solid #dfd8d3;
+                        background: $white;
+                        border: 1px solid $grayest-white;
                         border-radius: .45rem;
                         box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, .1), 0 0.2rem 0.2rem rgba(0, 0, 0, .02);
                         display: grid;
@@ -267,7 +267,7 @@ header {
 
                         &.dropdown-menu-features {
                             div:first-child {
-                                border-right: solid #dfd8d3 1px;
+                                border-right: solid $grayest-white 1px;
                                 margin-right: 2rem;
                             }
 
@@ -275,11 +275,11 @@ header {
                                 margin-top: 1.25rem;
                                 padding: 1.25rem 0 0 0;
                                 width: 100%;
-                                border-top: 0.1rem solid #dfd8d3;
+                                border-top: 0.1rem solid $grayest-white;
                                 grid-column: 1 / n;
 
                                 &:hover, &:focus-visible, &:active {
-                                    color: #351e7a;
+                                    color: $very-darker-purple;
                                 }
                             }
                         }

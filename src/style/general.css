@@ -43,7 +43,7 @@ body {
 }
 .header.header-scrolled {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0.05rem 0px, rgba(0, 0, 0, 0.1) 0px 0.1rem 0.2rem;
-  background: #fff;
+  background: #ffffff;
   transition: 0.2s;
 }
 
@@ -95,7 +95,7 @@ header button:nth-child(2), header li button {
 }
 header .mobile-menu-container {
   position: absolute;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #dfd8d3;
   border-radius: 0.45rem;
   margin: 0.45rem;
@@ -144,7 +144,7 @@ header .mobile-menu-container ul:not(.dropdown-menu ul) {
 header .sign-up-link {
   display: block;
   background: #4b2aad;
-  color: #fff !important;
+  color: #ffffff !important;
   text-align: center;
   width: 100%;
   border-radius: 2.5rem;
@@ -236,7 +236,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   header nav ul li:has(button) .dropdown-menu {
     position: absolute;
     padding: 1.5rem;
-    background: #fff;
+    background: #ffffff;
     border: 1px solid #dfd8d3;
     border-radius: 0.45rem;
     box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.02);
