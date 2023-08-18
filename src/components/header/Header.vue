@@ -6,6 +6,13 @@ import { ref } from 'vue';
 import { openDropdown } from './openDropdown';
 
 const toggleMenu = ref(false);
+const isScrolledDown = ref(false);
+
+const handleScroll = () => {
+    isScrolledDown.value = window.scrollY > 100;
+};
+
+window.addEventListener('scroll', handleScroll);
 
 const toggleDropdown = (dropdown) => {
     openDropdown.value = openDropdown.value === dropdown ? null : dropdown;
@@ -15,7 +22,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
 </script>
 
 <template>
-    <div class="header">
+    <div class="header" :class="{ 'header-scrolled': isScrolledDown }">
         <header>
             <a href="" class="header-logo-link" aria-label="Podia">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 26">
