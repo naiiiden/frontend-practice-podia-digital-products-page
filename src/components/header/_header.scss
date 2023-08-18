@@ -1,6 +1,13 @@
 .header {
     position: sticky;
     top: 0;
+    transition: .2s;
+
+    &.header-scrolled {
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 0.05rem 0px, rgba(0, 0, 0, 0.1) 0px 0.1rem 0.2rem;
+        background: #fff;
+        transition: .2s;
+    }
 }
 
 header {
@@ -194,12 +201,14 @@ header {
 
 @media screen and (min-width: 1024px) {
     .header {
-        max-width: 1440px;
         padding: 0 5rem;
-        margin: auto;
     }
-
+    
     header {
+        padding: 1rem 5rem;
+        max-width: 1440px;
+        margin: auto;
+
         .mobile-navigation {
             display: none;
         }
