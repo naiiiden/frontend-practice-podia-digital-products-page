@@ -239,7 +239,6 @@ header {
                         border: 1px solid #dfd8d3;
                         border-radius: .45rem;
                         box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, .1), 0 0.2rem 0.2rem rgba(0, 0, 0, .02);
-
                         display: grid;
                         grid-template-columns: repeat(2, minmax(0, 1fr));
                         min-width: 27.5rem;
@@ -264,6 +263,10 @@ header {
                                 width: 100%;
                                 border-top: 0.1rem solid #dfd8d3;
                                 grid-column: 1 / n;
+
+                                &:hover, &:focus-visible, &:active {
+                                    color: #351e7a;
+                                }
                             }
                         }
 
