@@ -3,9 +3,9 @@ import HeaderFeaturesDropdown from './HeaderFeaturesDropdown.vue';
 import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
 
 import { ref } from 'vue';
+import { openDropdown } from './openDropdown';
 
 const toggleMenu = ref(false);
-const openDropdown = ref(null);
 
 const toggleDropdown = (dropdown) => {
     openDropdown.value = openDropdown.value === dropdown ? null : dropdown;
