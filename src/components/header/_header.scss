@@ -253,7 +253,7 @@ header {
                         }
 
                         &.dropdown-menu-features {
-                            & div:first-child {
+                            div:first-child {
                                 border-right: solid #dfd8d3 1px;
                                 margin-right: 2rem;
                             }
@@ -264,6 +264,13 @@ header {
                                 width: 100%;
                                 border-top: 0.1rem solid #dfd8d3;
                                 grid-column: 1 / n;
+                            }
+                        }
+
+                        &.dropdown-menu-resources {
+                            div:nth-child(2) {
+                                display: flex;
+                                align-items: flex-end;
                             }
                         }
                     }
