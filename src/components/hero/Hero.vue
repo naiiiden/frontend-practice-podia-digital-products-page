@@ -18,7 +18,7 @@ const props = defineProps({
             <p>{{ paragraph }}</p>
             <a href="">{{ link }}</a>
         </div>
-        <img src="{{ img }}" alt="">
+        <img :src="img" alt="">
     </div>
 </template>
 
