@@ -10,4 +10,9 @@ body {
     background: #fdfbf9;
 }
 
+main {
+    margin: 3.5rem 0;
+}
+
 @import '../components/header/header';
+@import '../components/hero/hero';
