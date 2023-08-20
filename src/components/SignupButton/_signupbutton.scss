@@ -1,0 +1,19 @@
+.sign-up-link {
+    display: block;
+    background: $very-dark-purple;
+    color: $white !important;
+    text-align: center;
+    width: 100%;
+    border-radius: 2.5rem;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    padding: .3rem 1.45rem;
+
+    &:hover, &:active, &:focus-visible {
+        background-color: $very-darker-purple;
+    } 
+    
+    &:active, &:focus-visible {
+        box-shadow: inset 0 0 0 0.2rem #d7d2e8;
+    }
+}
