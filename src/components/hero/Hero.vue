@@ -13,7 +13,7 @@ const props = defineProps({
 <template>
     <div class="hero-container">
         <div class="hero-text">
-            <span>{{ headingPreText }}</span>
+            <span class="hero-pre-heading">{{ headingPreText }}</span>
             <h1 v-if="heading1">{{ heading1 }}</h1>
             <h2 v-if="heading2">{{ heading2 }}</h2>
             <p>{{ paragraph }}</p>
