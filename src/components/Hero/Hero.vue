@@ -17,7 +17,7 @@ const props = defineProps({
         <div class="hero-text">
             <span class="hero-pre-heading">{{ headingPreText }}</span>
             <h1 v-if="heading1">{{ heading1 }}</h1>
-            <h2 v-if="heading2">{{ heading2 }}</h2>
+            <h3 v-if="heading2">{{ heading2 }}</h3>
             <p>{{ paragraph }}</p>
             <SignupButton v-if='link' :linkText='link'/>
             <a v-if="linkSecondary" href="" class="hero-link-secondary">{{ linkSecondary }} <span>→</span></a>
