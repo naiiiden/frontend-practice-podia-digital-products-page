@@ -2,6 +2,7 @@
 import Header from './components/Header/Header.vue';
 import { openDropdown } from './components/Header/openDropdown';
 import Hero from './components/Hero/Hero.vue';
+import SectionHeading from './components/SectionHeading/SectionHeading.vue';
 </script>
 
 <template>
@@ -47,6 +48,17 @@ import Hero from './components/Hero/Hero.vue';
         linkSecondary="Learn more about webinars"  
         img="src/assets/digital_products-webinars.png"
       />
+
+      <section>
+        <SectionHeading 
+          heading="All you have to do is make the product. Podia takes care of the details for you."
+          paragraph="Podia lets you make your sales page, take payments, and give your customers access all in one place. Host and sell your products without needing to figure out a handful of new tools."  
+        />
+        <SectionHeading
+          heading="What kinds of products can you sell with Podia?"
+          paragraph="Podia gives you the flexibility to sell whatever you want. That means you have more ways to grow your creator business."
+        />
+      </section>
     </main>
   </div>
 </template>
