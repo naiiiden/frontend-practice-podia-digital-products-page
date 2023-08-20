@@ -77,7 +77,6 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                             </li>
                             <li>
                                 <SignupButton linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
-                                <a href="" class="sign-up-link" @focus="openDropdown = !openDropdown">Sign up free</a>
                             </li>
                         </ul>
                     </div>
