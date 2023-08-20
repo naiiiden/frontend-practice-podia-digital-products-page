@@ -7,10 +7,12 @@
     border-radius: 2.5rem;
     font-family: Inter, sans-serif;
     font-weight: 600;
-    padding: .3rem 1.45rem;
+    font-size: 1.125rem;
+    padding: clamp(.3rem, 2vw, .625rem) clamp(1.45rem, 2vw, 1.5rem);
 
     &:hover, &:active, &:focus-visible {
         background-color: $very-darker-purple;
+        outline: 0;
     } 
     
     &:active, &:focus-visible {
@@ -21,11 +23,6 @@
 .hero-container {
     .sign-up-link {
         width: fit-content !important;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .sign-up-link {
-        padding: .625rem 1.5rem !important;
+        font-size: clamp(1.125rem, 2.5vw, 1.25rem);
     }
 }

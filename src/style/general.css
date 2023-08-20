@@ -49,10 +49,12 @@ main {
   border-radius: 2.5rem;
   font-family: Inter, sans-serif;
   font-weight: 600;
-  padding: 0.3rem 1.45rem;
+  font-size: 1.125rem;
+  padding: clamp(0.3rem, 2vw, 0.625rem) clamp(1.45rem, 2vw, 1.5rem);
 }
 .sign-up-link:hover, .sign-up-link:active, .sign-up-link:focus-visible {
   background-color: #351e7a;
+  outline: 0;
 }
 .sign-up-link:active, .sign-up-link:focus-visible {
   box-shadow: inset 0 0 0 0.2rem #d7d2e8;
@@ -61,13 +63,9 @@ main {
 .hero-container .sign-up-link {
   width: -moz-fit-content !important;
   width: fit-content !important;
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
 }
 
-@media screen and (min-width: 1024px) {
-  .sign-up-link {
-    padding: 0.625rem 1.5rem !important;
-  }
-}
 .header {
   position: sticky;
   top: 0;
@@ -235,23 +233,26 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
     display: flex;
     align-items: center;
   }
-  header nav ul a:not(.dropdown-menu a), header nav ul button {
+  header nav ul a:not(.dropdown-menu a, .sign-up-link), header nav ul button {
     font-size: 1.125rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem clamp(0.5rem, 1.375vw, 1rem);
     border-radius: 2rem;
     transition: 0.2s;
   }
-  header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a, .sign-up-link):hover, header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a, .sign-up-link):focus-visible, header nav ul button:not(.dropdown-menu a, .sign-up-link):hover, header nav ul button:not(.dropdown-menu a, .sign-up-link):focus-visible {
+  header nav ul a:not(.dropdown-menu a, .sign-up-link):not(.dropdown-menu a, .sign-up-link):hover, header nav ul a:not(.dropdown-menu a, .sign-up-link):not(.dropdown-menu a, .sign-up-link):focus-visible, header nav ul button:not(.dropdown-menu a, .sign-up-link):hover, header nav ul button:not(.dropdown-menu a, .sign-up-link):focus-visible {
     background-color: #f5efeb;
     color: #1a1715;
     transition: 0.2s;
   }
-  header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a):focus-visible, header nav ul a:not(.dropdown-menu a):not(.dropdown-menu a):active, header nav ul button:not(.dropdown-menu a):focus-visible, header nav ul button:not(.dropdown-menu a):active {
+  header nav ul a:not(.dropdown-menu a, .sign-up-link):not(.dropdown-menu a):focus-visible, header nav ul a:not(.dropdown-menu a, .sign-up-link):not(.dropdown-menu a):active, header nav ul button:not(.dropdown-menu a):focus-visible, header nav ul button:not(.dropdown-menu a):active {
     box-shadow: inset 0 0 0 0.2rem #d7d2e8;
     outline: none;
   }
   header nav ul li:has(button) {
     position: relative;
+  }
+  header nav ul li:has(button) svg {
+    min-width: 10px;
   }
   header nav ul li:has(button) .dropdown-menu {
     position: absolute;
