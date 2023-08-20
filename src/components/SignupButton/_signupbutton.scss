@@ -17,3 +17,15 @@
         box-shadow: inset 0 0 0 0.2rem #d7d2e8;
     }
 }
+
+.hero-container {
+    .sign-up-link {
+        width: fit-content !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sign-up-link {
+        padding: .625rem 1.5rem !important;
+    }
+}
