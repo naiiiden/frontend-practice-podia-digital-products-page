@@ -17,8 +17,8 @@ const props = defineProps({
             <h1 v-if="heading1">{{ heading1 }}</h1>
             <h2 v-if="heading2">{{ heading2 }}</h2>
             <p>{{ paragraph }}</p>
-            <a v-if="link" href="">{{ link }}</a>
-            <a v-if="linkSecondary" href="">{{ linkSecondary }} <span>→</span></a>
+            <a v-if="link" href="" class="hero-link-main">{{ link }}</a>
+            <a v-if="linkSecondary" href="" class="hero-link-secondary">{{ linkSecondary }} <span>→</span></a>
         </div>
         <img :src="img" alt="">
     </div>
