@@ -4,6 +4,7 @@ import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
 
 import { ref } from 'vue';
 import { openDropdown } from './openDropdown';
+import SignupButton from '../SignupButton/SignupButton.vue';
 
 const toggleMenu = ref(false);
 const isScrolledDown = ref(false);
@@ -75,6 +76,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                                 <HeaderResourcesDropdown v-if="openDropdown === 'resources'"/>
                             </li>
                             <li>
+                                <SignupButton linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
                                 <a href="" class="sign-up-link" @focus="openDropdown = !openDropdown">Sign up free</a>
                             </li>
                         </ul>
@@ -114,7 +116,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                         <a href="" @focus="openDropdown = !openDropdown">Login</a>
                     </li>
                     <li>
-                        <a href="" class="sign-up-link">Sign up free</a>
+                        <SignupButton linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
                     </li>
                 </ul>
             </nav>

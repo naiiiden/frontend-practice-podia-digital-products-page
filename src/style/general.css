@@ -293,7 +293,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   padding: 1rem;
   display: grid;
   gap: 3.5rem;
-  grid-auto-flow: row;
+  align-items: center;
 }
 .hero-container img {
   order: -1;

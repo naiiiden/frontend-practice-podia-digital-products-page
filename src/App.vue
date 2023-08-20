@@ -1,7 +1,7 @@
 <script setup>
-import Header from './components/header/Header.vue';
-import { openDropdown } from './components/header/openDropdown';
-import Hero from './components/hero/Hero.vue';
+import Header from './components/Header/Header.vue';
+import { openDropdown } from './components/Header/openDropdown';
+import Hero from './components/Hero/Hero.vue';
 </script>
 
 <template>
