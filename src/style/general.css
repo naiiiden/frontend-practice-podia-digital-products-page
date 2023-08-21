@@ -316,7 +316,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
 }
 .hero-container .hero-pre-heading {
   display: inline-block;
-  color: #9c8881;
+  color: #817065;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -477,7 +477,7 @@ figure figcaption {
   font-size: clamp(1rem, 1.75vw, 1.125rem);
 }
 .cta-container a {
-  background-color: #9484c6;
+  background-color: #7D69BA;
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
