@@ -411,6 +411,15 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 0.5rem;
+}
+.feature-card h3 {
+  font-family: Tiempos-Medium, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.125rem, 1.75vw, 1.25rem);
+}
+.feature-card p {
+  color: #5c5856;
 }
 
 @media screen and (min-width: 768px) {
