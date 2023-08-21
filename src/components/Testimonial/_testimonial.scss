@@ -10,3 +10,17 @@ figure {
         width: 180px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    figure {
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    figure {
+        max-width: 1440px;
+        margin: auto;
+        padding: 2.5rem 5rem;
+    }
+}
