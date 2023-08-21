@@ -1,0 +1,30 @@
+.cta-wrapper {
+    padding: 1rem;
+}
+
+.cta-container {
+    padding: 1.5rem;
+    background-color: #201445;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    border-radius: .45rem;
+
+    h2 {
+        color: $white;
+        font-size: clamp(1.5rem, 4.5vw, 1.875rem);
+        font-family: Tiempos-Medium, sans-serif;
+        font-weight: 400;
+    }
+
+    p {
+        color: #d7d2e8;
+        font-size: clamp(1rem, 1.75vw, 1.125rem);
+    }
+
+    a {
+        background-color: #9484c6;
+        margin: auto;
+        width: fit-content;
+    }
+}

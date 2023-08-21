@@ -88,11 +88,13 @@ import CallToAction from './components/CallToAction/CallToAction.vue';
           img="src/assets/digital_products-webinars.png"
         />
       </section>
-      <CallToAction
-        h2="Get your free Podia account"
-        paragraph="Join the 150,000+ creators who use Podia to create websites, sell digital products, and build online communities."
-        linkText="Sign up free"
-      />
+      <div class="cta-wrapper">
+        <CallToAction
+          h2="Get your free Podia account"
+          paragraph="Join the 150,000+ creators who use Podia to create websites, sell digital products, and build online communities."
+          linkText="Sign up free"
+        />
+      </div>
     </main>
   </div>
 </template>
