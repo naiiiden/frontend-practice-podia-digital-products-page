@@ -435,4 +435,15 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
     margin: auto;
     padding: 2.5rem 5rem;
   }
+}
+figure {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+figure img {
+  width: 180px;
 }/*# sourceMappingURL=general.css.map */
