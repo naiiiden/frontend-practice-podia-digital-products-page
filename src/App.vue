@@ -3,6 +3,7 @@ import Header from './components/Header/Header.vue';
 import { openDropdown } from './components/Header/openDropdown';
 import Hero from './components/Hero/Hero.vue';
 import SectionHeading from './components/SectionHeading/SectionHeading.vue';
+import FeatureCard from './components/FeatureCard/FeatureCard.vue';
 </script>
 
 <template>
@@ -20,6 +21,21 @@ import SectionHeading from './components/SectionHeading/SectionHeading.vue';
         <SectionHeading 
           heading="All you have to do is make the product. Podia takes care of the details for you."
           paragraph="Podia lets you make your sales page, take payments, and give your customers access all in one place. Host and sell your products without needing to figure out a handful of new tools."  
+        />
+        <FeatureCard 
+          img="src/assets/cart.svg"
+          h3="Checkout and sales are handled for you"
+          paragraph="You don’t have to figure out a bunch of tools or website embeds. Just connect a payment provider and your Podia site takes care of payments for you."  
+        />
+        <FeatureCard 
+          img="src/assets/login.svg"
+          h3="Your customers log in, and your products are there for them"
+          paragraph="Your Podia site handles access to products for you. Everything is in one place. When your customers buy a product, they get a log in. After that, they can see all the products they’ve bought from you."  
+        />
+        <FeatureCard 
+          img="src/assets/cloud.svg"
+          h3="Upload your product. Make your sales page. Done."
+          paragraph="You could sell a digital product by this afternoon. Podia handles hosting, sales pages, checkout, and delivery. All you need is something to sell."  
         />
       </section>
       <section>
