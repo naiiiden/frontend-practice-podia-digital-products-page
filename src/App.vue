@@ -4,6 +4,7 @@ import { openDropdown } from './components/Header/openDropdown';
 import Hero from './components/Hero/Hero.vue';
 import SectionHeading from './components/SectionHeading/SectionHeading.vue';
 import FeatureCard from './components/FeatureCard/FeatureCard.vue';
+import Testimonial from './components/Testimonial/Testimonial.vue';
 </script>
 
 <template>
@@ -52,6 +53,10 @@ import FeatureCard from './components/FeatureCard/FeatureCard.vue';
           linkSecondary="Learn more about courses"  
           img="src/assets/digital_products-courses.png"
         />
+        <Testimonial
+          blockquote="I’ve wanted to offer e-courses for a while but always felt overwhelmed with how to set it up. Podia has made it super easy."
+          figcaption="— Joy Cho, Oh Joy! Academy"
+        />
         <Hero 
           headingPreText="Digital Downloads"
           heading2="Ebooks, templates, and any file type you can think of"
@@ -59,12 +64,20 @@ import FeatureCard from './components/FeatureCard/FeatureCard.vue';
           linkSecondary="Learn more about downloads"  
           img="src/assets/digital_products-downloads.png"
         />
+        <Testimonial
+          blockquote="We didn’t have to stress about technical details or custom coding. Using Podia made selling our first eBook quick, efficient, and fun."
+          figcaption="— Matt & Steph, Plant-based food bloggers"
+        />
         <Hero 
           headingPreText="Coaching"
           heading2="One-on-one coaching and consultations, with billing managed for you"
           paragraph="Sometimes your students want one-on-one attention. Podia makes it easy for you to charge for coaching sessions and consultations."
           linkSecondary="Learn more about coaching"  
           img="src/assets/digital_products-coaching.png"
+        />
+        <Testimonial
+          blockquote="Podia just works. It’s easy to use and includes everything you need to sell digital products. I’ve tried all the alternatives, and Podia is hard to beat."
+          figcaption="— Shawn Leamon, Divorce and Your Money"
         />
         <Hero 
           headingPreText="Webinars"
