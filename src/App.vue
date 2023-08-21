@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero.vue';
 import SectionHeading from './components/SectionHeading/SectionHeading.vue';
 import FeatureCard from './components/FeatureCard/FeatureCard.vue';
 import Testimonial from './components/Testimonial/Testimonial.vue';
+import CallToAction from './components/CallToAction/CallToAction.vue';
 </script>
 
 <template>
@@ -87,6 +88,11 @@ import Testimonial from './components/Testimonial/Testimonial.vue';
           img="src/assets/digital_products-webinars.png"
         />
       </section>
+      <CallToAction
+        h2="Get your free Podia account"
+        paragraph="Join the 150,000+ creators who use Podia to create websites, sell digital products, and build online communities."
+        linkText="Sign up free"
+      />
     </main>
   </div>
 </template>

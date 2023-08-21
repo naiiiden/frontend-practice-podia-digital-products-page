@@ -1,0 +1,18 @@
+<script setup>
+import SignupButton from '../SignupButton/SignupButton.vue';
+
+const props = defineProps({
+    h2: String,
+    paragraph: String,
+    linkText: String,
+})
+</script>
+
+<template>
+    <section class="cta-container">
+        <h2 v-if="h2">{{ h2 }}</h2>
+        <p>{{ paragraph }}</p>
+        <SignupButton v-if='linkText' :linkText='linkText'/>
+    </section>
+</template>
+
