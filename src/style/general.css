@@ -59,12 +59,14 @@ section:not([class]) {
   font-weight: 600;
   font-size: 1.125rem;
   padding: clamp(0.3rem, 2vw, 0.625rem) clamp(1.45rem, 2vw, 1.5rem);
+  transition: 0.2s;
 }
 .sign-up-link:hover, .sign-up-link:active, .sign-up-link:focus-visible {
   background-color: #351e7a;
   outline: 0;
+  transition: 0.2s;
 }
-.sign-up-link:active, .sign-up-link:focus-visible {
+.sign-up-link:hover:active, .sign-up-link:hover:focus-visible, .sign-up-link:active:active, .sign-up-link:active:focus-visible, .sign-up-link:focus-visible:active, .sign-up-link:focus-visible:focus-visible {
   box-shadow: inset 0 0 0 0.2rem #d7d2e8;
 }
 

@@ -1,5 +1,5 @@
 <script setup>
-import SignupButton from '../SignupButton/SignupButton.vue';
+import SignupLink from '../SignupLink/SignupLink.vue';
 
 const props = defineProps({
     headingPreText: String,
@@ -19,7 +19,7 @@ const props = defineProps({
             <h1 v-if="heading1">{{ heading1 }}</h1>
             <h3 v-if="heading2">{{ heading2 }}</h3>
             <p>{{ paragraph }}</p>
-            <SignupButton v-if='link' :linkText='link'/>
+            <SignupLink v-if='link' :linkText='link'/>
             <a v-if="linkSecondary" href="" class="hero-link-secondary">{{ linkSecondary }} <span>→</span></a>
         </div>
         <img :src="img" alt="">

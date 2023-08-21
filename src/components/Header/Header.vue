@@ -4,7 +4,7 @@ import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
 
 import { ref } from 'vue';
 import { openDropdown } from './openDropdown';
-import SignupButton from '../SignupButton/SignupButton.vue';
+import SignupLink from '../SignupLink/SignupLink.vue';
 
 const toggleMenu = ref(false);
 const isScrolledDown = ref(false);
@@ -51,7 +51,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                             <li>
                                 <button @click="toggleDropdown('features')">
                                     Features
-                                    <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
+                                    <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                                     </svg>
                                 </button>
@@ -69,14 +69,14 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                             <li>
                                 <button @click="toggleDropdown('resources')">
                                     Resources
-                                    <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }">
+                                    <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                                     </svg>
                                 </button>
                                 <HeaderResourcesDropdown v-if="openDropdown === 'resources'"/>
                             </li>
                             <li>
-                                <SignupButton linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
+                                <SignupLink linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
                             </li>
                         </ul>
                     </div>
@@ -87,7 +87,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                     <li>
                         <button @click="toggleDropdown('features')">
                             Features
-                            <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
+                            <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                             </svg>
                         </button>
@@ -105,7 +105,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                     <li>
                         <button @click="toggleDropdown('resources')">
                             Resources
-                            <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }">
+                            <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                             </svg>
                         </button>
@@ -115,7 +115,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                         <a href="" @focus="openDropdown = !openDropdown">Login</a>
                     </li>
                     <li>
-                        <SignupButton linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
+                        <SignupLink linkText="Sign up free" @focus="openDropdown = !openDropdown"/>
                     </li>
                 </ul>
             </nav>
