@@ -35,7 +35,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                 <a href="" class="header-login-button">Login</a>
                 <button @click="toggleMenu = !toggleMenu">
                     Menu
-                    <svg width="10" id="icon-caret" viewBox="0 0 10 6" fill="none" :class="{ asd: isDropdownOpen('features') }">
+                    <svg width="10" viewBox="0 0 10 6" fill="none">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
                     </svg>
                 </button>
