@@ -9,9 +9,10 @@ import CallToAction from './components/CallToAction/CallToAction.vue';
 </script>
 
 <template>
+  <a href="#main" class="skipnav" role="button">skip to content</a>
   <Header/>
   <div @click="openDropdown = !openDropdown">
-    <main>
+    <main id="main">
       <Hero 
         headingPreText="Digital Products"
         heading1="Sell online courses, coaching sessions, webinars, workshops, ebooks, and anything you can think of on Podia"
