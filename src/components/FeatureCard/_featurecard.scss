@@ -1,3 +1,5 @@
+@import '../../style/mixins';
+
 .feature-cards-container {
     display: flex;
     flex-direction: column;
@@ -6,11 +8,8 @@
 }
 
 .feature-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-col-center(.5rem);
     text-align: center;
-    gap: .5rem;
     
     h3 {
         font-family: Tiempos-Regular, sans-serif;

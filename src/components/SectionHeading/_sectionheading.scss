@@ -1,9 +1,8 @@
+@import '../../style/mixins';
+
 .section-heading {
     padding: 0 clamp(1rem, 5vw, 5rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    @include flex-col-center;
     text-align: center;
 
     h2 {
