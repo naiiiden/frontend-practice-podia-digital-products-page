@@ -1,3 +1,5 @@
+@import '../../style/mixins';
+
 .cta-wrapper {
     padding: 0 clamp(1rem, 5vw, 5rem);
 }
@@ -11,10 +13,7 @@
     border-radius: .45rem;
 
     h2 {
-        color: $white;
-        font-size: clamp(1.5rem, 4.5vw, 2.25rem);
-        font-family: Tiempos-Medium, sans-serif;
-        font-weight: 400;
+        @include heading($minVal: 1.5rem, $prefVal: 4.5vw, $maxVal: 2.25rem, $color: $white);
     }
 
     p {

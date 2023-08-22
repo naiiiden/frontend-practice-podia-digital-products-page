@@ -328,10 +328,9 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
 .hero-container h1, .hero-container h3 {
   font-family: Tiempos-Medium, sans-serif;
   font-weight: 400;
-  line-height: 1.3;
-}
-.hero-container h1 {
   font-size: clamp(2rem, 4.5vw, 3.125rem);
+  line-height: 1.3;
+  color: #1a1715;
 }
 .hero-container h3 {
   font-size: clamp(1.5rem, 4.5vw, 1.875rem);
@@ -379,10 +378,12 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   text-align: center;
 }
 .section-heading h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   font-family: Tiempos-Medium, sans-serif;
   font-weight: 400;
-  line-height: 1.3;
   font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  line-height: 1.3;
+  color: #1a1715;
 }
 .section-heading p {
   color: #5c5856;
@@ -410,9 +411,11 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   text-align: center;
 }
 .feature-card h3 {
-  font-family: Tiempos-Regular, sans-serif;
+  font-family: Tiempos-Medium, sans-serif;
   font-weight: 400;
   font-size: clamp(1.125rem, 1.75vw, 1.25rem);
+  line-height: 1.3;
+  color: #1a1715;
 }
 .feature-card p {
   color: #5c5856;
@@ -469,10 +472,11 @@ figure figcaption {
   border-radius: 0.45rem;
 }
 .cta-container h2 {
-  color: #ffffff;
-  font-size: clamp(1.5rem, 4.5vw, 2.25rem);
   font-family: Tiempos-Medium, sans-serif;
   font-weight: 400;
+  font-size: clamp(1.5rem, 4.5vw, 2.25rem);
+  line-height: 1.3;
+  color: #ffffff;
 }
 .cta-container p {
   color: #d7d2e8;

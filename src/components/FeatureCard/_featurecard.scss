@@ -12,9 +12,7 @@
     text-align: center;
     
     h3 {
-        font-family: Tiempos-Regular, sans-serif;
-        font-weight: 400;
-        font-size: clamp(1.125rem, 1.75vw, 1.25rem);
+        @include heading($minVal: 1.125rem, $prefVal: 1.75vw, $maxVal: 1.25rem);
     }
 
     p {
