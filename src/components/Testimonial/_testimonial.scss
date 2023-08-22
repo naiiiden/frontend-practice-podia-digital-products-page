@@ -16,8 +16,7 @@ figure {
     }
 
     figcaption {
-        font-size: clamp(1rem, 1.75vw, 1.125rem);
-        color: #5c5856;
+        @include paragraph($minVal: 1rem, $prefVal: 11.75vw, $maxVal: 1.125rem);
     }
 }
 

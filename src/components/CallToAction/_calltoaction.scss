@@ -17,8 +17,7 @@
     }
 
     p {
-        color: #d7d2e8;
-        font-size: clamp(1rem, 1.75vw, 1.125rem);
+        @include paragraph($minVal: 1rem, $prefVal: 1.75vw, $maxVal: 1.125rem, $color: #d7d2e8);
     }
 
     a {

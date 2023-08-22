@@ -34,9 +34,8 @@
         font-size: clamp(1.5rem, 4.5vw, 1.875rem);
     }
 
-    p {
-        color: #5c5856;
-        font-size: clamp(1.125rem, 2.5vw, 1.25rem);    
+    p { 
+        @include paragraph(); 
     }
 
     .hero-link-secondary {

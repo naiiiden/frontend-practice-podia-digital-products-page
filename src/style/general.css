@@ -336,8 +336,8 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   font-size: clamp(1.5rem, 4.5vw, 1.875rem);
 }
 .hero-container p {
-  color: #5c5856;
   font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  color: #5c5856;
 }
 .hero-container .hero-link-secondary {
   display: inline-block;
@@ -378,7 +378,6 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   text-align: center;
 }
 .section-heading h2 {
-  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   font-family: Tiempos-Medium, sans-serif;
   font-weight: 400;
   font-size: clamp(1.5rem, 3.5vw, 2.25rem);
@@ -386,8 +385,8 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   color: #1a1715;
 }
 .section-heading p {
-  color: #5c5856;
   font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  color: #5c5856;
 }
 
 @media screen and (min-width: 1024px) {
@@ -418,6 +417,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   color: #1a1715;
 }
 .feature-card p {
+  font-size: 1rem;
   color: #5c5856;
 }
 
@@ -450,7 +450,7 @@ figure blockquote {
   font-size: clamp(1.125rem, 1.75vw, 1.25rem);
 }
 figure figcaption {
-  font-size: clamp(1rem, 1.75vw, 1.125rem);
+  font-size: clamp(1rem, 11.75vw, 1.125rem);
   color: #5c5856;
 }
 
@@ -479,8 +479,8 @@ figure figcaption {
   color: #ffffff;
 }
 .cta-container p {
-  color: #d7d2e8;
   font-size: clamp(1rem, 1.75vw, 1.125rem);
+  color: #d7d2e8;
 }
 .cta-container a {
   background-color: #7D69BA;

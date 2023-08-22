@@ -6,13 +6,11 @@
     text-align: center;
 
     h2 {
-        font-size: clamp(1.5rem, 3.5vw, 2.25rem);   
         @include heading($minVal: 1.5rem, $prefVal: 3.5vw, $maxVal: 2.25rem);
     }
 
     p {
-        color: #5c5856;
-        font-size: clamp(1.125rem, 2.5vw, 1.25rem);   
+        @include paragraph();  
     }
 }
 

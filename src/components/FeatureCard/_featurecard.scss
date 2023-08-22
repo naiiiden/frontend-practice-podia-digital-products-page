@@ -16,7 +16,7 @@
     }
 
     p {
-        color: #5c5856;
+        @include paragraph($minVal: 1rem, $prefVal: 1rem, $maxVal: 1rem);
     }
 }
 

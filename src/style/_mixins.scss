@@ -12,3 +12,8 @@
     line-height: 1.3;
     color: $color;
 }
+
+@mixin paragraph($minVal: 1.125rem, $prefVal: 2.5vw, $maxVal: 1.25rem, $color: #5c5856) {
+    font-size: clamp($minVal, $prefVal, $maxVal);
+    color: $color;
+}
