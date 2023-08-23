@@ -6,6 +6,7 @@ import SectionHeading from './components/SectionHeading/SectionHeading.vue';
 import FeatureCard from './components/FeatureCard/FeatureCard.vue';
 import Testimonial from './components/Testimonial/Testimonial.vue';
 import CallToAction from './components/CallToAction/CallToAction.vue';
+import Footer from './components/Footer/Footer.vue';
 </script>
 
 <template>
@@ -97,5 +98,6 @@ import CallToAction from './components/CallToAction/CallToAction.vue';
         />
       </div>
     </main>
+    <Footer/>
   </div>
 </template>
