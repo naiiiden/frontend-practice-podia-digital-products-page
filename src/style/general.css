@@ -527,4 +527,14 @@ figure figcaption {
 footer {
   padding: clamp(3.5rem, 5vw, 6rem) 0;
   background: #f5efeb;
+}
+footer .footer-content {
+  padding: 0 clamp(1rem, 5vw, 5rem);
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-content {
+    max-width: 1440px;
+    margin: auto;
+  }
 }/*# sourceMappingURL=general.css.map */

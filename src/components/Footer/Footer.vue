@@ -3,7 +3,9 @@
 </script>
 <template>
     <footer>
-        hi
+        <div class="footer-content">
+            hi
+        </div>
     </footer>
 </template>
 
