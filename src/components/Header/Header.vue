@@ -33,7 +33,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
             </a>
             <nav class="mobile-navigation">
                 <a href="" class="header-login-button">Login</a>
-                <button @click="toggleMenu = !toggleMenu" aria-label="Open menu">
+                <button @click="toggleMenu = !toggleMenu" :aria-label="!toggleMenu === true ? 'Open menu' : 'Close menu'">
                     Menu
                     <svg width="10" viewBox="0 0 10 6" fill="none">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
