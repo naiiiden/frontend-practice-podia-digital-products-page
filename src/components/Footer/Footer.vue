@@ -1,4 +1,5 @@
 <script setup>
+import FooterNavLi from './FooterNavLi.vue';
 
 </script>
 
@@ -26,6 +27,11 @@
                             <li><a href="">Email marketing</a></li>
                         </ul>
                     </li>
+                    <FooterNavLi liName="haha">
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                    </FooterNavLi>
                 </ul>
             </nav>
         </div>
