@@ -208,6 +208,13 @@ const footerNavList = ref([
                     </FooterNavLi>
                 </ul>
             </nav>
+            <div>
+                <p>Podia Labs, Inc. © 2023</p>
+                <ul>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </template>
