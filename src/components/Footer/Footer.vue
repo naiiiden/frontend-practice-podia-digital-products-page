@@ -1,6 +1,8 @@
 <script setup>
 import FooterNavLi from './FooterNavLi.vue';
 
+import { ref } from 'vue';
+
 const footerNavList = ref([
     {
         liName: 'Platform',
@@ -197,11 +199,12 @@ const footerNavList = ref([
         <div class="footer-content">
             <nav>
                 <ul>
-                    <FooterNavLi liName="Social">
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Youtube</a></li>
+                    <FooterNavLi v-for="linkSection in footerNavList" :liName='linkSection.liName'>
+                        <ul>
+                            <li v-for="link in linkSection.links">
+                                <a href="">{{ link.text }}</a>
+                            </li>
+                        </ul>
                     </FooterNavLi>
                 </ul>
             </nav>
