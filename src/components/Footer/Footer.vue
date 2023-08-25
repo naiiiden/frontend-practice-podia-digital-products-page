@@ -198,7 +198,16 @@ const footerNavList = ref([
     <footer>
         <div class="footer-content">
             <nav>
-                <ul>
+                <ul class="footer-content-mobile">
+                    <FooterNavLi v-for="linkSection in footerNavList" :liName='linkSection.liName'>
+                        <ul>
+                            <li v-for="link in linkSection.links">
+                                <a href="">{{ link.text }}</a>
+                            </li>
+                        </ul>
+                    </FooterNavLi>
+                </ul>
+                <ul class="footer-content-desktop">
                     <FooterNavLi v-for="linkSection in footerNavList" :liName='linkSection.liName'>
                         <ul>
                             <li v-for="link in linkSection.links">
