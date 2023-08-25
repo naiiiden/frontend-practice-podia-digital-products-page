@@ -1,3 +1,5 @@
+@import '../../style/mixins';
+
 .header {
     position: sticky;
     top: 0;
@@ -104,7 +106,7 @@ header {
             }
         }
     
-        li, li button {
+        li {
             font-family: Tiempos-Regular, sans-serif;
             font-size: 1.25rem;
             border: none;
@@ -117,11 +119,9 @@ header {
             &:nth-last-child(1):not(button, .dropdown-menu li) {
                 margin-top: 1rem;
             }
-    
-            &:is(button) {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
+
+            .menu-dropdown-button {
+                @include dropdownButton($minVal: 1.25rem, $prefVal: 1.25rem, $maxVal: 1.25rem);
             }
         }
     

@@ -17,3 +17,22 @@
     font-size: clamp($minVal, $prefVal, $maxVal);
     color: $color;
 }
+
+@mixin dropdownButton($minVal: 1.125rem, $prefVal: 2.5vw, $maxVal: 1.25rem) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Tiempos-Regular, sans-serif;
+    font-size: clamp($minVal, $prefVal, $maxVal);
+    border: none;
+    background: none;
+
+    svg, .rotate {
+        transition: .2s;
+    
+        &.rotate {
+            transform: rotate(180deg);
+        }
+    }
+}

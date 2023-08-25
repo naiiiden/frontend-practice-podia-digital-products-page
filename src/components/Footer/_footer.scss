@@ -1,9 +1,15 @@
+@import '../../style/mixins';
+
 footer {
     padding: clamp(3.5rem, 4vw, 6rem) 0;
     background: #f5efeb;
 
     .footer-content {
         padding: 0 clamp(1rem, 5vw, 5rem);
+
+        button {
+            @include dropdownButton($minVal: 1.125rem, $prefVal: 1.125rem, $maxVal: 1.125rem);
+        }
     }
 }
 

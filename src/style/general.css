@@ -37,7 +37,7 @@ body {
 }
 
 main {
-  margin: clamp(3.5rem, 5vw, 6rem) 0;
+  margin: clamp(3.5rem, 4vw, 6rem) 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: clamp(3.5rem, 7vw, 7rem);
@@ -179,22 +179,33 @@ header .mobile-menu-container .close-menu-button {
 header .mobile-menu-container .close-menu-button:active svg {
   color: #4b2aad;
 }
-header .mobile-menu-container li, header .mobile-menu-container li button {
+header .mobile-menu-container li {
   font-family: Tiempos-Regular, sans-serif;
   font-size: 1.25rem;
   border: none;
   background: none;
 }
-header .mobile-menu-container li:nth-child(1):not(button, .dropdown-menu li), header .mobile-menu-container li button:nth-child(1):not(button, .dropdown-menu li) {
+header .mobile-menu-container li:nth-child(1):not(button, .dropdown-menu li) {
   margin-top: 2rem;
 }
-header .mobile-menu-container li:nth-last-child(1):not(button, .dropdown-menu li), header .mobile-menu-container li button:nth-last-child(1):not(button, .dropdown-menu li) {
+header .mobile-menu-container li:nth-last-child(1):not(button, .dropdown-menu li) {
   margin-top: 1rem;
 }
-header .mobile-menu-container li:is(button), header .mobile-menu-container li button:is(button) {
+header .mobile-menu-container li .menu-dropdown-button {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: Tiempos-Regular, sans-serif;
+  font-size: 1.25rem;
+  border: none;
+  background: none;
+}
+header .mobile-menu-container li .menu-dropdown-button svg, header .mobile-menu-container li .menu-dropdown-button .rotate {
+  transition: 0.2s;
+}
+header .mobile-menu-container li .menu-dropdown-button svg.rotate, header .mobile-menu-container li .menu-dropdown-button .rotate.rotate {
+  transform: rotate(180deg);
 }
 header .mobile-menu-container ul:not(.dropdown-menu ul) {
   display: flex;
@@ -525,11 +536,27 @@ figure figcaption {
   }
 }
 footer {
-  padding: clamp(3.5rem, 5vw, 6rem) 0;
+  padding: clamp(3.5rem, 4vw, 6rem) 0;
   background: #f5efeb;
 }
 footer .footer-content {
   padding: 0 clamp(1rem, 5vw, 5rem);
+}
+footer .footer-content button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Tiempos-Regular, sans-serif;
+  font-size: 1.125rem;
+  border: none;
+  background: none;
+}
+footer .footer-content button svg, footer .footer-content button .rotate {
+  transition: 0.2s;
+}
+footer .footer-content button svg.rotate, footer .footer-content button .rotate.rotate {
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 1024px) {

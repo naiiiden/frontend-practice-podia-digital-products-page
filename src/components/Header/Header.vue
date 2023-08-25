@@ -49,7 +49,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                         </button>
                         <ul>
                             <li>
-                                <button @click="toggleDropdown('features')" :aria-label="isDropdownOpen('features') ? 'Close Features menu': 'Open Features menu'" aria-live="polite">
+                                <button @click="toggleDropdown('features')" :aria-label="isDropdownOpen('features') ? 'Close Features menu': 'Open Features menu'" aria-live="polite" class="menu-dropdown-button">
                                     Features
                                     <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('features') }">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
@@ -67,7 +67,7 @@ const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
                                 <a href="" @focus="openDropdown = !openDropdown">Demo</a>
                             </li>
                             <li>
-                                <button @click="toggleDropdown('resources')" :aria-label="isDropdownOpen('resources') ? 'Close Resources menu': 'Open Resources menu'" aria-live="polite">
+                                <button @click="toggleDropdown('resources')" :aria-label="isDropdownOpen('resources') ? 'Close Resources menu': 'Open Resources menu'" aria-live="polite" class="menu-dropdown-button">
                                     Resources
                                     <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isDropdownOpen('resources') }" >
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
