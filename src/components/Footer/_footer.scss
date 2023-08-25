@@ -11,7 +11,7 @@ footer {
             @include dropdownButton($minVal: 1.125rem, $prefVal: 1.125rem, $maxVal: 1.125rem);
         }
 
-        h3 {
+        h3, .footer-content-desktop {
             display: none;
         }
     }
@@ -22,11 +22,11 @@ footer {
         max-width: 1440px;
         margin: auto;
 
-        button {
+        button, .footer-content-mobile {
             display: none !important;
         }
 
-        h3 {
+        h3, .footer-content-desktop {
             display: unset !important;
         }
     }

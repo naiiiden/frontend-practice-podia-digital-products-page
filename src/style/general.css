@@ -558,7 +558,7 @@ footer .footer-content button svg, footer .footer-content button .rotate {
 footer .footer-content button svg.rotate, footer .footer-content button .rotate.rotate {
   transform: rotate(180deg);
 }
-footer .footer-content h3 {
+footer .footer-content h3, footer .footer-content .footer-content-desktop {
   display: none;
 }
 
@@ -567,10 +567,10 @@ footer .footer-content h3 {
     max-width: 1440px;
     margin: auto;
   }
-  .footer-content button {
+  .footer-content button, .footer-content .footer-content-mobile {
     display: none !important;
   }
-  .footer-content h3 {
+  .footer-content h3, .footer-content .footer-content-desktop {
     display: unset !important;
   }
 }/*# sourceMappingURL=general.css.map */
