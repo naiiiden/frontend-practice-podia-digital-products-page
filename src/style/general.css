@@ -558,10 +558,19 @@ footer .footer-content button svg, footer .footer-content button .rotate {
 footer .footer-content button svg.rotate, footer .footer-content button .rotate.rotate {
   transform: rotate(180deg);
 }
+footer .footer-content h3 {
+  display: none;
+}
 
 @media screen and (min-width: 1024px) {
   .footer-content {
     max-width: 1440px;
     margin: auto;
+  }
+  .footer-content button {
+    display: none !important;
+  }
+  .footer-content h3 {
+    display: unset !important;
   }
 }/*# sourceMappingURL=general.css.map */
