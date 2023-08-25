@@ -36,3 +36,15 @@
         }
     }
 }
+
+@mixin dropdownLink($minVal: 1rem, $prefVal: 2.5vw, $maxVal: 1.125rem) {
+    font-family: Inter, sans-serif;
+    font-size: clamp($minVal, $prefVal, $maxVal);
+    color: #5c5856;
+    transition: .2s;
+
+    &:hover, &:active, &:focus-visible {
+        color: $very-dark-purple;
+        transition: .2s;
+    }
+}

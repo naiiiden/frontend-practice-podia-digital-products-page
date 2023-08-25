@@ -16,10 +16,9 @@ footer {
         }
 
         a {
-            color: #5c5856;
+            @include dropdownLink;
             text-decoration: underline;
             text-decoration-thickness: 0.01em;
-            font-size: clamp(1rem, 2.5vw, 1.125rem);
         }
     }
 }
@@ -43,10 +42,11 @@ footer {
         .footer-content-desktop {
             display: flex !important;
             flex-direction: column;
-            gap: 1rem;
-
+            gap: .5rem;
+            
             ul, li {
                 display: flex;
+                align-items: center;
                 gap: 1rem;
             }
         }
