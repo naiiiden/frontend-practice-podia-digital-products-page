@@ -1,7 +1,21 @@
 <script setup>
 import FooterNavLi from './FooterNavLi.vue';
-
 import { ref } from 'vue';
+
+// ChatGPT
+const dropdownStates = ref({});
+
+const toggleDropdown = (dropdownName) => {
+  // Close all other dropdowns
+  Object.keys(dropdownStates.value).forEach((dropdown) => {
+    dropdownStates.value[dropdown] = false;
+  });
+
+  // Open the selected dropdown
+  dropdownStates.value[dropdownName] = !dropdownStates.value[dropdownName];
+};
+
+const isDropdownOpen = (dropdownName) => dropdownStates.value[dropdownName];
 
 const footerNavList = ref([
     {
@@ -199,9 +213,14 @@ const footerNavList = ref([
         <div class="footer-content">
             <nav>
                 <ul class="footer-content-mobile">
-                    <FooterNavLi v-for="linkSection in footerNavList" :liName='linkSection.liName'>
-                        <ul>
-                            <li v-for="link in linkSection.links">
+                    <FooterNavLi
+                        v-for="linkSection in footerNavList"
+                        :key="linkSection.liName"
+                        :liName="linkSection.liName"
+                        @toggleDropdown="toggleDropdown"
+                    >
+                        <ul v-if="isDropdownOpen(linkSection.liName)">
+                            <li v-for="link in linkSection.links" :key="link.text">
                                 <a href="">{{ link.text }}</a>
                             </li>
                         </ul>
