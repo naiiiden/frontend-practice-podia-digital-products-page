@@ -561,6 +561,12 @@ footer .footer-content button svg.rotate, footer .footer-content button .rotate.
 footer .footer-content h3, footer .footer-content .footer-content-desktop {
   display: none;
 }
+footer .footer-content a {
+  color: #5c5856;
+  text-decoration: underline;
+  text-decoration-thickness: 0.01em;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
 
 @media screen and (min-width: 1024px) {
   .footer-content {
@@ -570,7 +576,19 @@ footer .footer-content h3, footer .footer-content .footer-content-desktop {
   .footer-content button, .footer-content .footer-content-mobile {
     display: none !important;
   }
-  .footer-content h3, .footer-content .footer-content-desktop {
+  .footer-content h3 {
     display: unset !important;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #1a1715;
+  }
+  .footer-content .footer-content-desktop {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-content .footer-content-desktop ul, .footer-content .footer-content-desktop li {
+    display: flex;
+    gap: 1rem;
   }
 }/*# sourceMappingURL=general.css.map */
