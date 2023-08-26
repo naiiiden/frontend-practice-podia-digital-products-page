@@ -20,7 +20,7 @@ const toggleDropdown = () => {
     <li>
         <button class="footer-mobile-btn" @click="toggleDropdown">
             {{ liName }}
-            <svg width="10" viewBox="0 0 10 6" fill="none">
+            <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isOpen }">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
             </svg>
         </button>
