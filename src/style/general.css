@@ -113,11 +113,8 @@ header {
   align-items: center;
   padding: 1rem clamp(1.25rem, 5vw, 5rem);
 }
-header svg, header .rotate {
+header svg {
   transition: 0.2s;
-}
-header svg.rotate, header .rotate.rotate {
-  transform: rotate(180deg);
 }
 header .header-logo-link, header svg {
   width: -moz-fit-content;
@@ -206,6 +203,7 @@ header .mobile-menu-container li .menu-dropdown-button svg, header .mobile-menu-
 }
 header .mobile-menu-container li .menu-dropdown-button svg.rotate, header .mobile-menu-container li .menu-dropdown-button .rotate.rotate {
   transform: rotate(180deg);
+  transition: 0.2s;
 }
 header .mobile-menu-container ul:not(.dropdown-menu ul) {
   display: flex;
@@ -554,6 +552,7 @@ footer .footer-content button svg, footer .footer-content button .rotate {
 }
 footer .footer-content button svg.rotate, footer .footer-content button .rotate.rotate {
   transform: rotate(180deg);
+  transition: 0.2s;
 }
 footer .footer-content h3, footer .footer-content .footer-content-desktop {
   display: none;

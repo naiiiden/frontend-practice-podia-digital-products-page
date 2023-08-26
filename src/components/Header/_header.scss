@@ -19,12 +19,8 @@ header {
     padding: 1rem clamp(1.25rem, 5vw, 5rem);
     
     // SVG
-    svg, .rotate {
+    svg {
         transition: .2s;
-    
-        &.rotate {
-            transform: rotate(180deg);
-        }
     }
 
     .header-logo-link, svg {

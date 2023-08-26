@@ -33,6 +33,7 @@
     
         &.rotate {
             transform: rotate(180deg);
+            transition: .2s;
         }
     }
 }
