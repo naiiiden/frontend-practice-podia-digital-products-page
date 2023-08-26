@@ -6,12 +6,14 @@ import { ref } from 'vue';
 const dropdownStates = ref({});
 
 const toggleDropdown = (dropdownName) => {
-  // Close all other dropdowns
   Object.keys(dropdownStates.value).forEach((dropdown) => {
-    dropdownStates.value[dropdown] = false;
+    // Close all other dropdowns except the clicked one
+    if (dropdown !== dropdownName) {
+      dropdownStates.value[dropdown] = false;
+    }
   });
 
-  // Open the selected dropdown
+  // Toggle the state of the clicked dropdown
   dropdownStates.value[dropdownName] = !dropdownStates.value[dropdownName];
 };
 
