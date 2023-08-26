@@ -220,6 +220,7 @@ const footerNavList = ref([
                         :key="linkSection.liName"
                         :liName="linkSection.liName"
                         @toggleDropdown="toggleDropdown"
+                        :aria-label="isDropdownOpen(linkSection.liName) ? `Close ${linkSection.liName} menu`: `Open ${linkSection.liName} menu`"
                     >
                         <ul v-if="isDropdownOpen(linkSection.liName)">
                             <li v-for="link in linkSection.links" :key="link.text">

@@ -4,6 +4,7 @@ import { ref, defineEmits } from 'vue';
 
 const props = defineProps({
   liName: String,
+  ariaLabel: String,
 });
 
 const emits = defineEmits();
@@ -18,7 +19,7 @@ const toggleDropdown = () => {
 
 <template>
     <li>
-        <button class="footer-mobile-btn" @click="toggleDropdown">
+        <button class="footer-mobile-btn" @click="toggleDropdown"  aria-live="polite" :aria-label=ariaLabel>
             {{ liName }}
             <svg width="10" viewBox="0 0 10 6" fill="none" :class="{ rotate: isOpen }">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"></path>
