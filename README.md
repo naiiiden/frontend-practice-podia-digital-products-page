@@ -1,7 +1,11 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Frontend Practice Podia Digital Products Page
+This is a practice project and all materials owned by companies and individuals whose website is featured on https://www.frontendpractice.com/ are meant for practice purposes only.
+## Screenshots
+### Mobile Design
+![mobile_design](/screenshots/mobile_design.png)
+### Mobile Menu
+![mobile_menu](/screenshots/mobile_menu.png)
+### Desktop Design
+![desktop_design](/screenshots/desktop_design.png)
+### Desktop Dropdown Menu
+![desktop_dropdown_menu](/screenshots/desktop_dropdown.png)
