@@ -287,7 +287,7 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
   header nav ul li:has(button) svg {
     min-width: 10px;
   }
-  header nav ul li:has(button) .dropdown-menu {
+  header nav ul .dropdown-menu {
     position: absolute;
     padding: 1.5rem;
     background: #ffffff;
@@ -298,28 +298,28 @@ header .dropdown-menu.dropdown-menu-features a:nth-child(3) span {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     min-width: 27.5rem;
   }
-  header nav ul li:has(button) .dropdown-menu ul {
+  header nav ul .dropdown-menu ul {
     flex-direction: column;
     align-items: flex-start;
     border-bottom: unset !important;
     margin-bottom: unset !important;
     padding-bottom: unset !important;
   }
-  header nav ul li:has(button) .dropdown-menu.dropdown-menu-features div:first-child {
+  header nav ul .dropdown-menu.dropdown-menu-features div:first-child {
     border-right: solid #dfd8d3 1px;
     margin-right: 2rem;
   }
-  header nav ul li:has(button) .dropdown-menu.dropdown-menu-features a:nth-child(3) {
+  header nav ul .dropdown-menu.dropdown-menu-features a:nth-child(3) {
     margin-top: 1.25rem;
     padding: 1.25rem 0 0 0;
     width: 100%;
     border-top: 0.1rem solid #dfd8d3;
     grid-column: 1/n;
   }
-  header nav ul li:has(button) .dropdown-menu.dropdown-menu-features a:nth-child(3):hover, header nav ul li:has(button) .dropdown-menu.dropdown-menu-features a:nth-child(3):focus-visible, header nav ul li:has(button) .dropdown-menu.dropdown-menu-features a:nth-child(3):active {
+  header nav ul .dropdown-menu.dropdown-menu-features a:nth-child(3):hover, header nav ul .dropdown-menu.dropdown-menu-features a:nth-child(3):focus-visible, header nav ul .dropdown-menu.dropdown-menu-features a:nth-child(3):active {
     color: #351e7a;
   }
-  header nav ul li:has(button) .dropdown-menu.dropdown-menu-resources div:nth-child(2) {
+  header nav ul .dropdown-menu.dropdown-menu-resources div:nth-child(2) {
     display: flex;
     align-items: flex-end;
   }
