@@ -160,6 +160,8 @@ header .mobile-menu-container {
   left: 0;
   right: 0;
   padding: 1.25rem;
+  max-height: 95vh;
+  overflow-y: scroll;
 }
 header .mobile-menu-container .close-menu-button {
   width: 100%;
