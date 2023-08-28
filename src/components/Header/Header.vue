@@ -2,7 +2,7 @@
 import HeaderFeaturesDropdown from './HeaderFeaturesDropdown.vue';
 import HeaderResourcesDropdown from './HeaderResourcesDropdown.vue';
 
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { openDropdown } from './openDropdown';
 import SignupLink from '../SignupLink/SignupLink.vue';
 
@@ -20,6 +20,14 @@ const toggleDropdown = (dropdown) => {
 };
 
 const isDropdownOpen = (dropdown) => openDropdown.value === dropdown;
+
+watch(toggleMenu, (newValue) => {
+  if (newValue) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'initial';
+  }
+});
 </script>
 
 <template>
